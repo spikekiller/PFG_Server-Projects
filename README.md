@@ -1,4 +1,3 @@
 Server-projects
 ===============
-For the PFG Server Group
-Work for Server Projects goes in here
+The code contained within is property of Perilous Fun Gaming.
