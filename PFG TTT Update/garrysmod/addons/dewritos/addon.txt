@@ -1,0 +1,7 @@
+// Extracted with MulleDK19's GMAD Extractor
+"AddonInfo"
+{
+	"name" "DewRitos Playermodels"
+	"author_name" "Swamp Fox"
+	"info" " { 	"description": "Dewrito's Player Models", 	"type": "model", 	"tags":  	[ 		"fun", 		"cartoon" 	] }"
+}
