@@ -6,6 +6,12 @@ local GetTranslation = LANG.GetTranslation
 local GetPTranslation = LANG.GetParamTranslation
 local inputColor = {255, 0, 0}
 
+local clock = os.clock
+function sleep(n)  -- seconds
+  local t0 = clock()
+  while clock() - t0 <= n do end
+end 
+
 function randomColor(inputCol)
    speed = bfscoreboard.randomColorSpeed
    
@@ -215,13 +221,13 @@ function PANEL:UpdatePlayerData()
         
 if ply:IsUserGroup("owner") then
   self.cols[5]:SetText("Owner")
-  self.cols[5]:SetTextColor(Color(255,0,0))
+  -- self.cols[5]:SetTextColor(Color(255,0,0))
   -- declaring random variables
   local rand01, rand02, rand03 = 0, 0, 0
   -- declaring color variables
   local cR, cG, cB = 0, 0, 0
   while true do
-    -- assigning random value, either 0 or 1.
+    --assigning random value, either 0 or 1.
     rand01, rand02, rand03 = math.random(0, 1), math.random(0, 1), math.random(0, 1)
     if rand01 == 1 then cR = 255 elseif cR = 0 end
     if rand02 == 1 then cG = 255 elseif cG = 0 end
