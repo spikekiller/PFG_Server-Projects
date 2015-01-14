@@ -200,12 +200,8 @@ function PANEL:UpdatePlayerData()
    end
      
 if ply:IsUserGroup("owner") then
-  local cR, cG, cB = 0, 0, 0
-  if math.random(0, 1) == 1 then cR = 255 else cR = 0 end
-  if math.random(0, 1) == 1 then cG = 255 else cG = 0 end
-  if math.random(0, 1) == 1 then cB = 255 else cB = 0 end
   self.cols[5]:SetText("Owner")
-  self.cols[5]:SetTextColor(Color(tonumber(cR), tonumber(cG), tonumber(cB)))
+  self.cols[5]:SetTextColor(Color(255,0,0))
   end
 
 if ply:IsUserGroup("Owner") then
